@@ -11,6 +11,10 @@ $(function(){
   });
   */
 
+  if($.cookie('popup')=='none') { // 만들어 놓은 쿠키 'popup'의 값이 'none'과 같으면
+    $('.banner').hide(); //배너 숨김
+  }
+
   // 선언함수: 이름이 있는 함수. 이름으로 호출할 수 있으므로 작성 위치가 자유로움
   function closeBanner(){ // closeBanner <- 사용자가 정의한 이름
 
