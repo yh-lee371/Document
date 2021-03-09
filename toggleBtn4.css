@@ -1,0 +1,96 @@
+@charset "utf-8";
+body {
+  text-align: center;
+}
+ul {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* banner */
+.banner {
+  width:100%;
+  height:100px;
+  position: relative;
+  transition: 0.6s;
+}
+.banner.on {
+  transform: translateY(-70px);
+}
+.banner h2 {
+  margin:0;
+  background-color: lavender;
+  height:70px;
+  padding-top: 20px;
+  position: relative;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+}
+.banner .close {
+  width:250px;
+  height:30px;
+  line-height: 30px;
+  background-color: lavender;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.712);
+  border:1px solid;
+  border-top:none ;
+  position: absolute;
+  right:10px;
+  bottom:0;
+  font-size: 14px;
+  transition: 0.6s;
+}
+.banner .close:hover {
+  box-shadow: none; right:8px;
+}
+.banner .close_btn {
+  border:1px solid black; 
+  padding:2px ;
+  background-color: #eee; 
+}
+.banner .close_btn:hover {
+  background-color: white;
+}
+
+/* 로고 */
+h1 {
+  font-size: 3rem;
+}
+
+/* 탭 버튼 */
+.tab {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color:#fff;
+}
+.tab a {
+  padding:10px 20px;
+  display: block;
+  background-color: #000;
+}
+.tab a:hover {
+  color:gold;
+}
+
+
+/* 갤러리 */
+.gallery {
+  width:640px;
+  margin: 0 auto;
+  border:3px solid #000;
+  
+  overflow: hidden;
+}
+.gallery .slide {
+  width:2460px;
+  display: flex;
+}

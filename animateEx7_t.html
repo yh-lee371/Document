@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>toggleBtn4</title>
+  <link rel="stylesheet" href="../../common/normalize.css">
+  <link rel="stylesheet" href="toggleBtn4.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <!-- jQuery cookie js (서버에 올렸을 때 확인 가능) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- 내가 작성한 js는 제일 마지막에 연결 -->
+  <script src="toggleBtn4.js"></script>
+
+</head>
+<body>
+  <div class="banner">
+    <h2>광고 배너</h2>
+    <div class="close">
+      <!-- 서버 전송이 아닌 단순 여닫기로 쓸거니까 form 생략 가능 -->
+      <input type="checkbox" name="limit" id="limit">
+      <label for="limit">3일 동안 창 열지 않기</label>
+      <a href="#" class="close_btn">닫기</a>
+    </div>
+  </div>
+
+  <h1>로고</h1>
+
+  <!-- 하단 버튼 -->
+  <ul class="tab">
+    <li><a href="#">menu 1</a></li>
+    <li><a href="#">menu 2</a></li>
+    <li><a href="#">menu 3</a></li>
+    <li><a href="#">menu 4</a></li>
+  </ul>
+
+  <!-- 갤러리 -->
+  <div class="gallery">
+    <ul class="slide">
+      <li><img src="images/desk.jpg" alt="desk"></li>
+      <li><img src="images/pad.jpg" alt="pad"></li>
+      <li><img src="images/street.jpg" alt="street"></li>
+      <li><img src="images/tea.jpg" alt="tea"></li>
+    </ul>
+  </div>
+</body>
+</html>
